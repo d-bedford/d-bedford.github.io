@@ -36,7 +36,6 @@
 
 .intro button {
     margin: 10px;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,10 +47,12 @@
     background: linear-gradient(to right, #1D5D9B 50%, white 50%);
     background-size: 200% 100%;
     background-position: right bottom;
-
     transition: all .5s ease-out;
 }
-.intro button:hover {
+.show {
+    animation: line-load 4s;
+}
+.show:hover {
 
     background-position: left bottom;
     color: #F6F4EB;
