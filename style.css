@@ -121,6 +121,7 @@
 }
 .technologies img{
     width: 80px;
+    justify-self: center;
 }
 .technologies img:first-of-type{
     grid-column: 1;
