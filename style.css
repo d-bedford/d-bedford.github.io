@@ -64,49 +64,63 @@
 .about {
     background-color: #333;
     color: white;
-    height: 50vh;
+    height: 130vh;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 50px 0.9fr;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 50px 0.9fr 1fr 1fr;
 
+}
+.console {
+    grid-row: 3;
+    grid-column: 3;
+    max-width: 150px;
+    justify-self: center;
+}
+.home {
+    grid-row: 3;
+    grid-column: 1;
+    max-width: 150px;
+    justify-self: center;
 }
 .about h2 {
     background: #333;
     font-size: 1.8rem;
     grid-row: 1;
-    grid-column: 2;
+    grid-column: 1/4;
     margin-top: 15px;
     align-self: center;
     justify-self: center;
 }
 .about p {
-    grid-row: 2;
+    grid-row: 3;
     grid-column: 2;
     font-size: 1.1rem;
-    max-width: 450px;
-    align-self: center;
-    justify-self: center;
-}
-.about img {
-    grid-row: 2;
-    grid-column: 1;
-    justify-self: center;
-    max-width: 300px;
-    align-self: center;
-}
-.technologies {
-    grid-column: 3;
-    grid-row: 2;
-    display: grid;
-    grid-template-columns: 0.2fr 0.2fr 0.2fr;
-    gap: 10px;
-    grid-template-rows: 0.5fr 0.2fr;
+    max-width: 700px;
     align-self: center;
 
 }
-.technologies img {
-    max-width: 70px;
-    margin-left: 20px;
+.man {
+    margin: 20px;
+    grid-row: 2;
+    grid-column: 1/4;
+    justify-self: center;
+    max-width: 250px;
+    align-self: center;
+}
+.technologies {
+    grid-column: 2;
+    grid-row: 4;
+    display: grid;
+    width: 500px;
+    gap: 40px;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 0.5fr 0.2fr;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+}
+.technologies img{
+    width: 80px;
 }
 .technologies img:first-of-type{
     grid-column: 1;
