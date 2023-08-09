@@ -68,10 +68,11 @@ a {
 .about {
     background-color: #333;
     color: white;
-    height: 130vh;
+    height: 110vh;
+    gap: 10px;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 50px 0.9fr 1fr 1fr;
+    grid-template-rows: 50px 0.2fr 0.3fr 0.5fr;
 
 }
 .console {
@@ -101,10 +102,11 @@ a {
     font-size: 1.1rem;
     max-width: 700px;
     align-self: center;
+    justify-self: center;
 
 }
 .man {
-    margin: 20px;
+    margin: 40px;
     grid-row: 2;
     grid-column: 1/4;
     justify-self: center;
@@ -233,4 +235,37 @@ footer a {
 footer a :hover {
     background-color: #F6F4EB;
     border-radius: 6px;
+}
+@media (max-width: 600px){
+    .about {
+        height: 90vh;
+        gap: 40px;
+    }
+    .home {
+        display: none;
+    }
+    .console {
+        display: none;
+    }
+    .contact {
+        height: 80vh;
+    }
+    footer {
+        height: 15vh;
+    }
+    .github {
+        max-width: 30px;
+        margin-bottom: 10px;
+    }
+    input {
+        width: 80vw;
+        font-size: 1.3rem;
+        padding: 5px;
+    }
+    .technologies {
+        grid-template-columns: 0.2fr 0.2fr 0.2fr;
+    }
+    .technologies img {
+        width: 70px;
+    }
 }
