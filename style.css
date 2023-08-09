@@ -154,7 +154,9 @@ a {
     grid-row: 2;
 }
 .line {
-    width: 100%;
+    border-right: 0;
+    border-left: 0;
+    width: 80%;
     grid-row: 1;
     grid-column: 1/4;
     margin-top: 15px;
@@ -257,8 +259,8 @@ footer a :hover {
         max-width: 30px;
         margin-bottom: 10px;
     }
-    input {
-        width: 80vw;
+    input, textarea {
+
         font-size: 1.3rem;
         padding: 5px;
     }
@@ -269,9 +271,19 @@ footer a :hover {
         width: 70px;
     }
 }
-@media (max-width: 400px){
+@media (max-width: 500px){
     .about {
-        height: 120vh;
+        height: 100vh;
+    }
+
+    .contact {
+        width: 100vw;
+    }
+    .contact h2 {
+        font-size: 1.5rem;
+    }
+    .contact-form {
+        max-width: 300px;
     }
     .man {
         max-width: 50%;
@@ -282,7 +294,7 @@ footer a :hover {
         width: 300px;
     }
     .technologies {
-        width: 300px;
+        width: 250px;
     }
     .technologies img {
         max-width: 50px;
